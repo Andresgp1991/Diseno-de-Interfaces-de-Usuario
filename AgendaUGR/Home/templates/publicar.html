@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+    <section class="breadcumb-area bg-img bg-overlay" style="background-image: url({% static "img/bg-img/home.jpg" %});">
+        <div class="bradcumbContent">
+            <h2>Publicar Evento</h2>
+        </div>
+    </section>
+
+    <section class="login-area section-padding-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="login-content">
+                        <div class="login-form">
+                            <form action="#" method="post">
+                                <div class="form-group">
+                                    <label for="Titulo">Título del evento</label>
+                                    <input autofocus="autofocus" type="text" class="form-control" id="Titulo" placeholder="Título del evento...">
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label for="Grupo">Nombre del grupo</label>
+                                            <input type="text" class="form-control" id="Grupo" placeholder="Nombre del grupo...">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label for="Genero">Género</label>
+                                            <input type="text" class="form-control" id="Genero" placeholder="Género...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Descripcion">Descripción del evento</label>
+                                    <textarea class="form-control" id="Descripcion" cols="30" rows="10" placeholder="                                                                                                                                                                    Descripción del evento..."></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label for="Inicio">Fecha de inicio del evento</label>
+                                            <input type="date" class="form-control" id="Inicio">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <label for="Final">Fecha final del evento</label>
+                                            <input type="date" class="form-control" id="Final">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <label for="Hora">Hora del evento</label>
+                                            <input type="time" class="form-control" id="Hora">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label for="Localidad">Localidad</label>
+                                            <input type="text" class="form-control" id="Localidad" placeholder="Localidad...">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label for="Precio">Precio de entrada</label>
+                                            <input type="number" class="form-control" id="Precio" placeholder="Precio de entrada...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Enlace">Enlace del evento</label>
+                                    <input type="url" class="form-control" id="Enlace" placeholder="Enlace del evento...">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Email">Email</label>
+                                    <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Email...">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Imagen">Añade una imagen del evento</label><br><br>
+                                    <input type="file" id="Imagen">
+                                </div>
+                                <button type="submit" class="btn oneMusic-btn mt-30">Publicar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

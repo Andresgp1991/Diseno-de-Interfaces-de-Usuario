@@ -1,0 +1,184 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+    <section class="breadcumb-area bg-img bg-overlay" style="background-image: url({% static "img/bg-img/home.jpg" %});">
+        <div class="bradcumbContent">
+            <h2>Próximos Eventos</h2>
+        </div>
+    </section>
+
+    <section class="events-area section-padding-100">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="blog-sidebar-area">
+
+                        <div class="single-widget-area mb-30">
+                            <div class="widget-title">
+                                <h5>Categorías</h5>
+                            </div>
+                            <div class="widget-content">
+                                <ul>
+                                    <li><a href="#">Music</a></li>
+                                    <li><a href="#">Events &amp; Press</a></li>
+                                    <li><a href="#">Festivals</a></li>
+                                    <li><a href="#">Lyfestyle</a></li>
+                                    <li><a href="#">Uncategorized</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="single-widget-area mb-30">
+                            <div class="widget-title">
+                                <h5>Fecha</h5>
+                            </div>
+                            <div class="widget-content">
+                                <ul>
+                                    <li><a href="#">February 2018</a></li>
+                                    <li><a href="#">March 2018</a></li>
+                                    <li><a href="#">April 2018</a></li>
+                                    <li><a href="#">May 2018</a></li>
+                                    <li><a href="#">June 2018</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="single-widget-area mb-30">
+                            <div class="widget-title">
+                                <h5>Lugar</h5>
+                            </div>
+                            <div class="widget-content">
+                                <ul class="tags">
+                                    <li><a href="#">music</a></li>
+                                    <li><a href="#">events</a></li>
+                                    <li><a href="#">artists</a></li>
+                                    <li><a href="#">press</a></li>
+                                    <li><a href="#">mp3</a></li>
+                                    <li><a href="#">videos</a></li>
+                                    <li><a href="#">concerts</a></li>
+                                    <li><a href="#">performers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="single-widget-area mb-30">
+                            <a href="#"><img src="{% static "img/bg-img/add3.gif" %}" alt=""></a>
+                        </div>
+
+                        <div class="single-widget-area mb-30">
+                            <a href="#"><img src="{% static "img/bg-img/add2.gif" %}" alt=""></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-1">
+                </div>
+
+                <div class="col-sm-8">
+                    <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="single-event-area mb-30">
+                            <div class="event-thumbnail">
+                                <img src="{% static "img/bg-img/home.jpg" %}" alt="">
+                            </div>
+                            <div class="event-text">
+                                <h4>La Tierra Prometida</h4>
+                                <div class="event-meta-data">
+                                    <a href="#" class="event-place">Monachil, Granada</a>
+                                    <a href="#" class="event-date">15 Junio, 2019</a>
+                                </div>
+                                <a href="{% url 'Informacionproxima' %}" class="btn see-more-btn">Información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="single-event-area mb-30">
+                            <div class="event-thumbnail">
+                                <img src="{% static "img/bg-img/home.jpg" %}" alt="">
+                            </div>
+                            <div class="event-text">
+                                <h4>La Tierra Prometida</h4>
+                                <div class="event-meta-data">
+                                    <a href="#" class="event-place">Monachil, Granada</a>
+                                    <a href="#" class="event-date">15 Junio, 2019</a>
+                                </div>
+                                <a href="{% url 'Informacionproxima' %}" class="btn see-more-btn">Información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="single-event-area mb-30">
+                            <div class="event-thumbnail">
+                                <img src="{% static "img/bg-img/home.jpg" %}" alt="">
+                            </div>
+                            <div class="event-text">
+                                <h4>La Tierra Prometida</h4>
+                                <div class="event-meta-data">
+                                    <a href="#" class="event-place">Monachil, Granada</a>
+                                    <a href="#" class="event-date">15 Junio, 2019</a>
+                                </div>
+                                <a href="{% url 'Informacionproxima' %}" class="btn see-more-btn">Información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="single-event-area mb-30">
+                            <div class="event-thumbnail">
+                                <img src="{% static "img/bg-img/home.jpg" %}" alt="">
+                            </div>
+                            <div class="event-text">
+                                <h4>La Tierra Prometida</h4>
+                                <div class="event-meta-data">
+                                    <a href="#" class="event-place">Monachil, Granada</a>
+                                    <a href="#" class="event-date">15 Junio, 2019</a>
+                                </div>
+                                <a href="{% url 'Informacionproxima' %}" class="btn see-more-btn">Información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="single-event-area mb-30">
+                            <div class="event-thumbnail">
+                                <img src="{% static "img/bg-img/home.jpg" %}" alt="">
+                            </div>
+                            <div class="event-text">
+                                <h4>La Tierra Prometida</h4>
+                                <div class="event-meta-data">
+                                    <a href="#" class="event-place">Monachil, Granada</a>
+                                    <a href="#" class="event-date">15 Junio, 2019</a>
+                                </div>
+                                <a href="{% url 'Informacionproxima' %}" class="btn see-more-btn">Información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="single-event-area mb-30">
+                            <div class="event-thumbnail">
+                                <img src="{% static "img/bg-img/home.jpg" %}" alt="">
+                            </div>
+                            <div class="event-text">
+                                <h4>La Tierra Prometida</h4>
+                                <div class="event-meta-data">
+                                    <a href="#" class="event-place">Monachil, Granada</a>
+                                    <a href="#" class="event-date">15 Junio, 2019</a>
+                                </div>
+                                <a href="{% url 'Informacionproxima' %}" class="btn see-more-btn">Información</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="load-more-btn text-center mt-70">
+                            <a href="#" class="btn oneMusic-btn">Cargar<i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
